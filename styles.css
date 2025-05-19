@@ -122,7 +122,7 @@ body {
 
  /* Mobile */
 
- @media (max-width: 428px) {
+ @media (min-width: 428px) {
 
   #container {
     padding: 50px 20px;
