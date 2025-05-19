@@ -7,20 +7,22 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start; /* αντί center */
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #000; /* ή ό,τι θες */
+  background-image: url(images/bg-dark-theme.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #container {
   /* background-color: rgba(6, 5, 17, 0.4); */
-  background-image: url(./images/bg-dark-theme.png);
-  z-index: 1;
+/*   background-image: url(./images/bg-dark-theme.png);
+  z-index: 1; */
   padding: 50px;
   border-radius: 10px;
 }
