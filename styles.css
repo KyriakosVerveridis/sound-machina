@@ -1,0 +1,213 @@
+* {
+  padding:0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(./images/bg-dark-theme.png);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  /* background-color: rgba(6, 5, 17, 0.4); */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.display p {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+  padding: 0 0 20px;
+  text-shadow: 0 0 10px white;
+  text-align: center;
+}
+
+.drum-pad-cont {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  gap: 10px;
+}
+
+/* Drum Pads */
+
+.drum-pad {
+  height: 10rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(196, 196, 196);
+  background-color: white;
+  box-shadow: inset 0 -4px 3px rgb(177, 177, 177);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.d1.active {
+  box-shadow: 0 0 50px cyan;
+  color: cyan;
+  background-color: rgb(203, 255, 255);
+ }
+ .d2.active {
+  box-shadow: 0 0 50px #00ff88;
+  color: #00ff88;
+  background-color: #cdffe8;
+ }
+ .d3.active {
+  box-shadow: 0 0 50px #cc00ff;
+  color: #cc00ff;
+  background-color: #f5cfff;
+ }
+ .d4.active {
+  box-shadow: 0 0 50px #eeff00;
+  color: #eeff00;
+  background-color: #fcffcf;
+ }
+ .d5.active {
+  box-shadow: 0 0 50px #ff0000;
+  color: #ff0000;
+  background-color: #ffd0d0;
+ }
+ .d6.active {
+  box-shadow: 0 0 50px #2600ff;
+  color: #2600ff;
+  background-color: #dbd4ff;
+ }
+ .d7.active {
+  box-shadow: 0 0 50px #ff00aa;
+  color: #ff00aa;
+  background-color: #ffd4f1;
+ }
+ .d8.active {
+  box-shadow: 0 0 50px #66ff00;
+  color: #66ff00;
+  background-color: #e3ffd0;
+ }
+ .d9.active {
+  box-shadow: 0 0 50px #ff3c00;
+  color: #ff3c00;
+  background-color: #ffdcd1;
+ }
+ 
+ .copyright {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  color: rgb(202, 202, 202);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+ }
+
+ @keyframes reloadAnimation {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+ }
+
+ /* Mobile */
+
+ @media (max-width: 428px) {
+
+  #container {
+    padding: 50px 20px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .display p {
+    font-size: 1.5rem;
+  }
+  
+  .drum-pad-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  /* Drum Pads */
+  
+  .drum-pad {
+    height: 6.5rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+    letter-spacing: 5px;
+    padding-top: 20px;
+   }
+ }
+
+ /* Tab */
+
+ @media (max-width: 429px) and (min-width: 1279px) {
+
+  #container {
+    padding: 50px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .display p {
+    font-size: 2rem;
+  }
+  
+  .drum-pad-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  /* Drum Pads */
+  
+  .drum-pad {
+    height: 12rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    padding-top: 20px;
+   }
+ }
+
+ /* Laptops */
+
+ @media (min-width: 1280px) and (max-width: 1919px) {
+
+  #container {
+    padding: 50px;
+    width: 30%;
+  }
+  
+  .display p {
+    font-size: 2rem;
+  }
+  
+  .drum-pad-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  /* Drum Pads */
+  
+  .drum-pad {
+    height: 7rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    padding-top: 20px;
+   }
+ }
