@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-  
+  background-image: url(images/bg-dark-theme.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
