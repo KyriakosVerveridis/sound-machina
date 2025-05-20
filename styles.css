@@ -9,15 +9,16 @@
 body {
   min-height: 100vh;
   display: flex;
-  align-items: flex-start; /* αντί center */
-  justify-content: center;
-  padding: 20px 0;
-  background-color: #000; /* ή ό,τι θες */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-image: url(images/bg-dark-theme.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 20px;
 }
+
 
 #container {
   /* background-color: rgba(6, 5, 17, 0.4); */
